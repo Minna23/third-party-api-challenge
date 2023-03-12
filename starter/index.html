@@ -18,52 +18,108 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Work Day Scheduler</title>
   </head>
 
   <body>
     <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
+      <h1 id="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
+      <p id="currentDay" class="lead">Current Time & Date:</p>
+      <p class="" id="time-display"></p>
     </header>
+    <section class="text-center notification" id="notify">Text added to localstorage</section>
     <div class="container">
       <!-- Timeblocks go here -->
       
-      <div class="row diary">
-        <div class="col my-col col-a1 hour" id="8"> 8am </div>
-        <div class="col my-col col-a2 edit_cont" > </div>
-        <div class="col my-col col-a3 saveBtn"> save </div>
+    <div class="row diary">
+      <div class="col md-1 col-a1 hour" id="8"> 8am </div>
+      <textarea class="col md-10 col-a2 edit_cont" id="notes-8"></textarea>
+      <input class="col md-1 col-a3 saveBtn" type="submit" value="Save" id="saveBtn8"></input>
     </div>
     <div class="row diary">
-        <div class="col my-col col-a1 hour" id="9"> 9am </div>
-        <div class="col my-col col-a2 edit_cont" > </div>
-        <div class="col my-col col-a3 saveBtn"> save </div>
+      <div class="col md-1 col-a1 hour" id="9"> 9am </div>
+      <textarea class="col md-10 col-a2 edit_cont" id="notes-9"> </textarea>
+      <input class="col md-1 col-a3 saveBtn" type="submit" value="Save"></input>
     </div>
     <div class="row diary" >
-        <div class="col my-col col-b1 hour" id="10"> 10am </div>
-        <div class="col my-col col-b2 edit_cont">  </div>
-        <div class="col my-col col-b3 saveBtn"> save </div>
+      <div class="col md-1 col-a1 hour" id="10"> 10am </div>
+      <textarea class="col md-10 col-a2 edit_cont" id="notes-10"> </textarea>
+      <input class="col md-1 col-a3 saveBtn" type="submit" value="Save"></input>
     </div>
     <div class="row diary" >
-        <div class="col my-col col-b1 hour" id="11"> 11am </div>
-        <div class="col my-col col-b2 edit_cont">  </div>
-        <div class="col my-col col-b3 saveBtn"> save </div>
+      <div class="col md-1 col-a1 hour" id="11"> 11am </div>
+      <textarea class="col md-10 col-a2 edit_cont" id="notes-11"> </textarea>
+      <input class="col md-1 col-a3 saveBtn" type="submit" value="Save"></input>
     </div>
     <div class="row diary" >
-        <div class="col my-col col-b1 hour" id="12"> 12pm </div>
-        <div class="col my-col col-b2 edit_cont">  </div>
-        <div class="col my-col col-b3 saveBtn"> save </div>
+      <div class="col md-1 col-a1 hour" id="12"> 12pm </div>
+      <textarea class="col md-10 col-a2 edit_cont" id="notes-12"> </textarea>
+      <input class="col md-1 col-a3 saveBtn" type="submit" value="Save"></input>
     </div>
     <div class="row diary" >
-        <div class="col my-col col-b1 hour" id="13"> 1pm </div>
-        <div class="col my-col col-b2 edit_cont">  </div>
-        <div class="col my-col col-b3 saveBtn"> save </div>
+      <div class="col md-1 col-a1 hour" id="13"> 1pm </div>
+      <textarea class="col md-10 col-a2 edit_cont" id="notes-13"> </textarea>
+      <input class="col md-1 col-a3 saveBtn" type="submit" value="Save"></input>
+    </div>
+    <div class="row diary" >
+      <div class="col md-1 col-a1 hour" id="14"> 2pm </div>
+      <textarea class="col md-10 col-a2 edit_cont" id="notes-14"> </textarea>
+      <input class="col md-1 col-a3 saveBtn" type="submit" value="Save"></input>
+    </div>
+    <div class="row diary" >
+      <div class="col md-1 col-a1 hour" id="15"> 3pm </div>
+      <textarea class="col md-10 col-a2 edit_cont" id="notes-15"> </textarea>
+      <input class="col md-1 col-a3 saveBtn" type="submit" value="Save"></input>
+    </div>
+    <div class="row diary" >
+      <div class="col md-1 col-a1 hour" id="16"> 4pm </div>
+      <textarea class="col md-10 col-a2 edit_cont" id="notes-16"> </textarea>
+      <input class="col md-1 col-a3 saveBtn" type="submit" value="Save"></input>
+    </div>
+    <div class="row diary" >
+      <div class="col md-1 col-a1 hour" id="17"> 5pm </div>
+      <textarea class="col md-10 col-a2 edit_cont" id="notes-17"> </textarea>
+      <input class="col md-1 col-a3 saveBtn" type="submit" value="Save"></input>
+    </div>
+    <div class="row diary" >
+      <div class="col md-1 col-a1 hour" id="18"> 6pm </div>
+      <textarea class="col md-10 col-a2 edit_cont" id="notes-18"> </textarea>
+      <input class="col md-1 col-a3 saveBtn" type="submit" value="Save"></input>
+    </div>
+    <div class="row diary" >
+      <div class="col md-1 col-a1 hour" id="19"> 7pm </div>
+      <textarea class="col md-10 col-a2 edit_cont" id="notes-19"> </textarea>
+      <input class="col md-1 col-a3 saveBtn" type="submit" value="Save"></input>
+    </div>
+    <div class="row diary" >
+      <div class="col md-1 col-a1 hour" id="20"> 8pm </div>
+      <textarea class="col md-10 col-a2 edit_cont" id="notes-20"> </textarea>
+      <input class="col md-1 col-a3 saveBtn" type="submit" value="Save"></input>
+    </div>
+    <div class="row diary" >
+      <div class="col md-1 col-a1 hour" id="21"> 9pm </div>
+      <textarea class="col md-10 col-a2 edit_cont" id="notes-21"> </textarea>
+      <input class="col md-1 col-a3 saveBtn" type="submit" value="Save"></input>
+    </div>
+    <div class="row diary" >
+      <div class="col md-1 col-a1 hour" id="22"> 10pm </div>
+      <textarea class="col md-10 col-a2 edit_cont" id="notes-22"> </textarea>
+      <input class="col md-1 col-a3 saveBtn" type="submit" value="Save"></input>
+    </div>
+    <div class="row diary" >
+      <div class="col md-1 col-a1 hour" id="23"> 11pm </div>
+      <textarea class="col md-10 col-a2 edit_cont" id="notes-23"> </textarea>
+      <input class="col md-1 col-a3 saveBtn" type="submit" value="Save"></input>
     </div>
 
+
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="script.js">
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
