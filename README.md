@@ -20,6 +20,7 @@ Save the event in local storage when the save button is clicked in that timebloc
 
 Persist events between refreshes of a page.
 
-link to the deployed app:
+link to the deployed app: https://minna23.github.io/third-party-api-challenge/
 
 image of the deployed app:
+![image](https://user-images.githubusercontent.com/21089692/224561916-34761d3a-ec92-4574-a8b9-3dbc95cab5e9.png)
